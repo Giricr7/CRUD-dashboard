@@ -51,7 +51,7 @@ function Dashboard() {
                         <br />
                         
                         <div style={{ display: "flex" }}>
-                        <Link to="/users"> <IconButton>
+                        <Link to="/#/users"> <IconButton>
                                 <PeopleIcon style={{ fontSize: "400%",color:"#D81B60" }} />
                                 <h2 style={{color:"#D81B60"}}>USERS</h2>
                             </IconButton></Link>    
