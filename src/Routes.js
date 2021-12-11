@@ -1,4 +1,4 @@
-import { Routes, Route, BrowserRouter } from "react-router-dom"
+import { Routes, Route, HashRouter } from "react-router-dom"
 import CreateUser from "./CreateUser"
 import ListUsers from "./ListUsers"
 import EditUser from "./EditUser"
@@ -9,7 +9,7 @@ import Dashboard from "./Dashboard"
 
 function Routers() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
                 <Route path='/users' element={<ListUsers />} exact></Route>
                 <Route path='/create-user' element={<CreateUser />} exact></Route>
@@ -18,7 +18,7 @@ function Routers() {
                 <Route path="/edit-profile/:id" element={<EditProfile />} exact ></Route>
                 <Route path="/" element={<Dashboard />} exact></Route>
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 
