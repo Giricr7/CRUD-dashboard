@@ -10,6 +10,7 @@ if (!localStorage.getItem("users")) {
 if (!localStorage.getItem("id")) {
   localStorage.setItem("id",0)
 }
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

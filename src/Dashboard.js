@@ -40,7 +40,7 @@ function Dashboard() {
                     <div>
                         
                         <div style={{ display: "flex" }} >
-                       <Link to={"/create-user"}> <IconButton>
+                       <Link to= {"/create-user"} > <IconButton>
                                 <AddCircleOutlineIcon style={{ fontSize: "400%", color: "#6200EA" }} />
                                 <h2 style={{color:"#6200EA"}}>ADD USER</h2>
                         </IconButton></Link>
@@ -51,7 +51,7 @@ function Dashboard() {
                         <br />
                         
                         <div style={{ display: "flex" }}>
-                        <Link to={"/users"}> <IconButton>
+                        <Link to= {"/users"} > <IconButton>
                                 <PeopleIcon style={{ fontSize: "400%",color:"#D81B60" }} />
                                 <h2 style={{color:"#D81B60"}}>USERS</h2>
                             </IconButton></Link>    

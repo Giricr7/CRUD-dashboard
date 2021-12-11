@@ -11,9 +11,18 @@ import { IconButton } from '@mui/material';
 
 function ListUsers() {
     
-   //getting all users from localstorage
-    let list = JSON.parse(localStorage.getItem('users'));
-    let [users, setUsers] = useState(list)
+    let list
+
+    if (localStorage.getItem('users') === '') {
+        list = []
+   } else {
+      //getting all users from localstorage
+        list = JSON.parse(localStorage.getItem('users'));
+   }
+
+    //state variable
+   let [users, setUsers] = useState(list)
+   
      
     
 //function to delete a user
