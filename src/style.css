@@ -1,0 +1,110 @@
+.createUserDiv,.submit_btn_div,.ProfileDiv,.editProfileDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboardDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.dashboardIcon{
+  color:violet;
+}
+
+.dashPaper{
+  justify-content: center;
+  align-items: center;
+}
+
+.listUserPaper{
+  height:15%;
+  width:40%;
+  padding: 2%;
+  display: flex;
+  border-left: 20px solid violet;
+
+}
+
+.listUserInnerDiv{
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid;
+  overflow: auto;
+}
+
+.profileIcon{
+  color: blueviolet;
+}
+.editIcon{
+color: green
+}
+.deleteIcon{
+  color: red;
+}
+
+.profileIcon,.editIcon,.deleteIcon :hover{
+cursor: pointer;
+}
+
+.profileInnerDiv{
+  text-align: center;
+  width: 100%;
+}
+
+.profilePaper{
+  width: fit-content;
+  word-wrap: break-word;
+}
+
+h6{
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.editProfilePaper{
+  width: 100%;
+  align-items: center;
+ 
+}
+
+.profileInput{
+  width:100%;
+  text-align: center;
+}
+
+@media only screen and (min-width: 500px) 
+{
+  #profileInput
+  {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 360px) 
+{
+  .listUserPaper{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1080px) 
+{
+  .profilePaper{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1080px) 
+{
+  .listUserPaper,.profilePaper{
+    width: 80%;
+  }
+}
+
