@@ -48,7 +48,7 @@ if (!user.maritalStatus)
 {
    userMaritalStatus = "";
 }
-if (!user.userCity) {
+if (!user.city) {
    userCity = "";
 }
     
