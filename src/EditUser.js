@@ -70,7 +70,11 @@ function EditUser() {
         } else {
              //submitting the endorsed user data to localstorage
             let details = { id: +id, username: username, email: email, password: password };
-            users[index] = details;
+            users[index].id = details.id;
+            users[index].username = details.username;
+            users[index].email = details.email;
+            users[index].password = details.password;
+
             localStorage["id"]= JSON.stringify(id);
             localStorage["users"] = JSON.stringify(users);
             Swal.fire({
