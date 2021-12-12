@@ -25,7 +25,8 @@ function Profile() {
     
     //validation to store empty string values in below variables
     let userRole = user.role, userGender = user.gender, userNationality = user.nationality,
-        userPhone=user.phone, userMaritalStatus=user.maritalStatus, userCity=user.city
+        userPhone = user.phone, userMaritalStatus = user.maritalStatus, userCity = user.city
+    
     if (!user.role) {
         userRole = "";
     }
@@ -42,7 +43,7 @@ function Profile() {
     {
         userMaritalStatus = "";
     }
-    if (!user.userCity) {
+    if (!user.city) {
         userCity = "";
     }
     

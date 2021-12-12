@@ -34,7 +34,7 @@ function CreateUser() {
         setConfirmPassword('')
     }
 
-//function that handles form submission
+    //function that handles form submission
     let handleSubmit = (e) => {
         e.preventDefault();
 
