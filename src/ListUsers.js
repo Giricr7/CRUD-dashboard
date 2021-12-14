@@ -41,7 +41,10 @@ function ListUsers() {
               if (result.isConfirmed) {
                 let filteredUsers = users.filter((user) => {
                             return (user.id !== id);
-                        })
+                })
+                  if (filteredUsers.length === 0) { 
+                      localStorage["id"] = 0;
+                  }
                         localStorage["users"] = JSON.stringify(filteredUsers);
                         setUsers(filteredUsers)
               Swal.fire(
